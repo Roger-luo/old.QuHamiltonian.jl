@@ -28,6 +28,7 @@ matrix:
 # uncomment the following lines to override the default test script
 script:
  - julia -e 'Pkg.clone("https://github.com/QuantumBFS/QuTypes.jl.git")'
+ - julia -e 'Pkg.clone("https://github.com/QuantumBFS/PhysConsts.jl.git")'
  - julia -e 'Pkg.clone("https://github.com/QuantumBFS/QuLattice.jl.git")'
  - julia -e 'Pkg.clone(pwd()); Pkg.build("QuHamiltonian"); Pkg.test("QuHamiltonian"; coverage=true)'
 after_success:
