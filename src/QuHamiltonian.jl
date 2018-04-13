@@ -1,3 +1,5 @@
+__precompile__()
+
 module QuHamiltonian
 
 using PhysConsts, QuTypes, QuLattice
