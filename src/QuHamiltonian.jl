@@ -1,5 +1,18 @@
 module QuHamiltonian
 
-# package code goes here
+using PhysConsts, QuTypes, QuLattice
+
+export AbstractHamiltonian, AbstractHamiltonianIterator
+
+abstract type AbstractHamiltonian end
+abstract type AbstractHamiltonianIterator end
+
+include("Kron.jl")
+
+include("LocalHamiltonian.jl")
+include("RegionIter.jl")
+
+# Fused Hamiltonian
+include("FusedHamiltonian.jl")
 
 end # module
